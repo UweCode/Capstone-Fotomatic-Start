@@ -29,7 +29,7 @@ html {
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 683px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -79,7 +79,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 683px) {
   header .desktop {
     display: none;
   }
@@ -170,19 +170,21 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 683px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
-    height: 28rem;
+    height: 20rem;
   }
 
   #sign-up-cta {
-    position: static;
-    width: auto;
-    height: auto;
     background-color: transparent;
     border: none;
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    width: auto;
   }
 
   #sign-up-cta .content {
@@ -275,17 +277,36 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 683px) {
+  .feature h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: normal;
+  }
+
+  .feature h3 {
+    font-size: .8rem;
+    line-height: 1.5;
+  }
+
   #features-section {
     flex-flow: column;
+    align-items: center;
     padding: 0;
+    margin: 0 auto;
   }
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 2rem 1rem;
+    height: 100%;
+  }
+
+  .feature .image-container {
+    margin-bottom: 1.2rem;
   }
 }
+
 
 /* Filters Section */
 
@@ -300,7 +321,7 @@ header .mobile {
 }
 
 #filters-section .content h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
 }
@@ -319,7 +340,7 @@ header .mobile {
   padding: 0 1%;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 683px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -375,17 +396,18 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
-  #quotes-section content {
+@media only screen and (max-width: 683px) {
+  #quotes-section .content {
+    flex-wrap: wrap;
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -409,7 +431,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 683px) {
   footer .content {
     font-size: .625rem;
   }
